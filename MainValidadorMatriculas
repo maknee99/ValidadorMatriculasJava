@@ -1,0 +1,14 @@
+package javaapplication3;
+import java.util.Scanner;
+public class ValidadorMatriculas {
+    public static void main(String[] args) {
+        Scanner scMatricula = new Scanner(System.in);
+        System.out.print("Introduce la matricula: ");
+        String matricula = scMatricula.nextLine();
+        if (matricula.matches("[0-9]{4}[A-Z]{3}")) {
+            System.out.println("La matricula esta bien formada");
+        } else {
+            System.out.println("La matricula no esta bien formada");
+        }
+    }
+}
